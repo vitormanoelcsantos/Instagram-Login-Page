@@ -2,7 +2,7 @@ let buttonSignup = document.querySelector('button');
 let inputUser = document.querySelector('.username');
 let inputPassword = document.querySelector('.password');
 
-inputUser.addEventListener('input', () => {
+inputPassword.addEventListener('input', () => {
 
     if (inputUser.value.length > 0 && inputPassword.value.length >= 6) {
         buttonSignup.removeAttribute('disabled');
