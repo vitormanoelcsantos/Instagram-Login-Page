@@ -1,10 +1,10 @@
 let buttonSignup = document.querySelector('button');
-let inputUser = document.querySelector('input');
-let inputPassword = document.querySelector('input');
+let inputUser = document.querySelector('.username');
+let inputPassword = document.querySelector('.password');
 
 inputUser.addEventListener('input', () => {
 
-    if (inputUser.value.length > 3 && inputPassword.value.length > 3) {
+    if (inputUser.value.length > 0 && inputPassword.value.length >= 6) {
         buttonSignup.removeAttribute('disabled');
         buttonSignup.style.backgroundColor = '#0095f6';
         buttonSignup.style.cursor = 'pointer';
