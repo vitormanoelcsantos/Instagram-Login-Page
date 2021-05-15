@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;    
+    min-height: 100vh;
+    background-color: #FAFAFA;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;    
+}
+
+.instagram-wrapper{
+    display: flex;
+    align-items: center; /** Eixo y **/
+    justify-content: start; /** Eixo x **/
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img{
+    height: 55em;
+}
+
+.instagram-login{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 48%;
+    min-height: 35em;    
+    margin-top: 50px;
+    /** Ao mudar a flex-direction para column, o justify-content e o align-items troca de lugar, porque eles meio que "viram"
+    | = Align
+    - = Justifiy
+    ao usar o flex-direction column:
+    - = Align
+    | = justifiy.
+    **/
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;    
+    background-color: #FFFFFF;
+    width: 90%;    
+    padding: 1.3em 0;
+    border: 1px solid lightgray;    
+    margin-bottom: 16px;       
+}
+
+.group:nth-child(1){
+    min-height: 19em;
+}
+
+.instagram-logo{    
+    margin-top: 16px;
+    height: 4em;    
+}
+
+.signinb{    
+    background-color: #B2DFFC;
+    color: #FFFFFF;
+    padding: 12px;
+    border-radius: 4px;
+    width: 80%;
+    margin-bottom: 16px;
+    margin-top: -10px;
+    font-weight: bold;
+    cursor: default;
+    border: none;
+}
+
+.or{
+    color: #9AA3BA;    
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.signinf{
+    color: #405F93;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.forget-the-password{
+    color: #487BB6;  
+    margin-bottom: 16px;
+}
+
+.signupc{
+    color: #0795F6;
+    font-weight: bold;    
+}
+
+.get-the-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;       
+    margin-bottom: 15px;
+}
+
+.download{
+    display: flex;
+    width: 100%;    
+    justify-content: center;
+    align-items: center;  
+}
+
+.app-download{
+    height: 48.99px;
+    width: 11.95em;
+    background-size: cover;     
+    margin: 5px;  
+}
+
+.app-download:nth-child(1){
+    background-image: url('./img/apple-button.png');    
+}
+
+.app-download:nth-child(2){
+    background-image: url('./img/googleplay-button.png');
+}
+
+.group:nth-child(2){
+    padding: 25px;
+   
+}
+
+input[type = "text"], input[type = "password"]{    
+    width: 80%;          
+    padding: 12px;   
+    margin: 5px;
+    background-color: #FAFAFA;
+    border: 1px solid #E6E6E6;
+    outline: none;    
+}
+
+input[type = "submit"]{
+    background-color: #B2DFFC;
+    border: none;
+}
+
+.signin{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+::-webkit-input-placeholder{
+    color: #A9B5C4;
+}
+
+/** Media queries **/
+
+@media (max-width: 1024px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .instagram-wrapper{
+        width: 90%;        
+    }
+
+    .instagram-phone{
+        display: none;
+    }
+
+    .instagram-login{
+        width: 100%;
+    }
+}
