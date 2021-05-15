@@ -84,8 +84,7 @@ body{
     margin-top: -10px;
     font-weight: bold;
     cursor: default;
-    border: none;
-    transition: 0.25s;
+    border: none;    
 }
 
 .or{
