@@ -177,14 +177,21 @@ input[type = "submit"]{
 
 /** Media queries **/
 
-@media (max-width: 1024px){
-    .instagram-wrapper{
+@media (max-width: 1024px) {
+    .instagram-wrapper{        
         width: 90%;
+        height: 90%;
+    }
+
+    .instagram-login{
+        width: 100%;
+        height: 100%;
     }
 }
 
 @media (max-width: 650px) {
     .instagram-wrapper{
+        height: 90%;
         width: 90%;        
     }
 
@@ -192,7 +199,7 @@ input[type = "submit"]{
         display: none;
     }
 
-    .instagram-login{
+    .instagram-login{        
         width: 100%;
     }
 }
