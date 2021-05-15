@@ -22,7 +22,7 @@ body{
     align-items: center; /** Eixo y **/
     justify-content: start; /** Eixo x **/
     width: 60%;
-    height: 100vh;
+    height: 85%;
 }
 
 .instagram-phone{
